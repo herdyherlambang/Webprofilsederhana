@@ -1,0 +1,93 @@
+:root {
+    --theme-red: #ef3724;
+    --theme-blue: #2960f7;
+    --theme-green: #8cc63f;
+    --theme-orange: #fd7e14;
+    --theme-purple: #6f42c1;
+}
+@font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Quicksand Medium'), local('Quicksand-Medium'), url(https://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_p2HcYT8L_.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+.fw-normal {
+    font-weight: 400;
+}
+
+.fw-light {
+    font-weight: 300;
+}
+
+.fs-large {
+    font-size: 21px;
+}
+
+.fs-normal {
+    font-size: 100%;
+}
+
+.fs-small {
+    font-size: 14px;
+}
+
+.img-place > img {
+    width: 100%;height: auto;
+}
+
+/*gayalistnihh*/
+.theme-list {
+    position: relative;
+    padding-left: 30px;
+    list-style: none;
+    z-index: 10;
+}
+
+.theme-list::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 9px;
+    margin: auto;
+    width: 1px;
+    height: 85%;
+    background-color: #cacdd6;
+    z-index: -1;
+}
+
+.theme-list li {
+    display: block;
+    margin: 5px 0;
+}
+
+.theme-list li::before {
+    content: "";
+    position: absolute;
+    left: 3px;
+    margin: 6px 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid #888;
+}
+
+/*ayolohhhtema*/
+}
+.theme-red .bg-theme {
+    background-color: #EF3724 !important;
+}
+
+.theme-red .fg-theme {
+    color: #EF3724 !important;
+}
+.theme-red .progress {
+    box-shadow: 0 0 0 2px #EF3724;
+}
+
+.theme-red .progress-bar {
+    background-color: #EF3724;
+}
